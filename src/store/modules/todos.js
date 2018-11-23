@@ -1,6 +1,5 @@
 const state = {
   todos: [],
-  filteredTodos: []
 }
 
 /**
