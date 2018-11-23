@@ -1,4 +1,4 @@
-# test-ldmr
+# test-vue-pattern
 
 ## Project setup
 ```
