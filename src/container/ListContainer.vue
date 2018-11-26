@@ -1,6 +1,4 @@
 <script>
-import NoList from '../components/List/NoList.vue'
-import List from '../components/List/List.vue'
 import { fetchMixin } from '../core/mixin/fetch'
 import { mapState, mapGetters } from 'vuex' 
 
@@ -31,15 +29,9 @@ export default {
     const todos = this.todos;
     return (
       <div>
-        {todos.length === 0 ? (
-          <NoList />
-        ) : (
-          <div class="container">{
-            todos.map(d => {
-              return <List data={d} />
-            })
-          }</div>
-        )}
+        {this.$scopedSlots.default({
+          todos: this.todos
+        })}
       </div>
     );
   }

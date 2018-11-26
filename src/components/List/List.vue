@@ -18,7 +18,7 @@
     height: 150px;
     padding: 10px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-    margin: 10px;
+    margin: 5px;
 
     .action {
       button {
