@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Demo render props"/>
-    <Searchbar 
+    <HelloWorld msg="Demo renderless"/>
+    <!-- <Searchbar 
       v-bind:value="searchValue"
       v-on:input="updateValue"
-    />
+    /> -->
     <div class="flex">
       <!-- <ListContainer :input="searchValue"/> -->
-      <list-container>
+      <!-- <list-container>
         <div class="flex" slot-scope="{ todos }">
           <no-list v-if="todos.length === 0"></no-list>
           <div class="flex">
@@ -17,7 +17,17 @@
               :data="todo"></list>
           </div>
         </div>
-      </list-container>
+      </list-container> -->
+      <enhanced-container>
+        <div slot-scope="{ customClasses, customText }">
+          <Button
+            :text="customText('hello')"
+            :classes="customClasses()"
+            :action="alertUser"
+            
+          />
+        </div>
+      </enhanced-container>
     </div>
   </div>
 </template>
@@ -30,11 +40,10 @@
 </style>
 
 <script>
+import EnhancedContainer from './container/EnhancedContainer.vue'
+
 import HelloWorld from './components/HelloWorld.vue'
-import Searchbar from './components/Searchbar/Searchbar.vue'
-import ListContainer from './container/ListContainer.vue'
-import NoList from './components/List/NoList.vue'
-import List from './components/List/List.vue'
+import Button from './components/Button/Button.vue'
 
 export default {
   name: 'app',
@@ -51,14 +60,15 @@ export default {
       if (!isNaN(id)) {
         this.$store.dispatch('user/setUser', id)
       }
+    },
+    alertUser() {
+      alert('zzzzz');
     }
   },
   components: {
     HelloWorld,
-    Searchbar,
-    ListContainer,
-    NoList,
-    List
+    EnhancedContainer,
+    Button
   }
 }
 </script>
