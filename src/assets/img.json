@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "Red velvet",
+      "img": "https://k-gen.fr/wp-content/uploads/2018/07/red-velvet-summer-magic-teaser-groupe-5-1600x768.jpg",
+      "thumbnail": "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/08/31/gmredvelvet0831_2x.jpg?itok=e_GNNBBc&timestamp=1535712319",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
+      "location": "Seoul, Korea",
+      "love": false
+    },
+    {
+      "id": 1,
+
+      "title": "Oh my girl",
+      "img": "https://0.soompi.io/wp-content/uploads/2018/01/24052131/oh-my-girl-show-champion.jpg?s=900x600&e=t",
+      "thumbnail": "https://0.soompi.io/wp-content/uploads/2018/01/24052131/oh-my-girl-show-champion.jpg?s=900x600&e=t",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
+      "location": "Busan haeundae, Korea",
+      "love": false
+    },
+    {
+      "id": 3,
+      "title": "Gugudan",
+      "img": "https://0.soompi.io/wp-content/uploads/2017/10/08190936/gugudan.jpg?s=900x600&e=t",
+      "thumbnail": "https://www.nautiljon.com/images/more/01/39/123993.jpg",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
+      "location": "Seoul, Guro-digital-complex, Korea",
+      "love": false
+    },
+    {
+      "id": 4,
+      "title": "Twice",
+      "img": "http://cdnweb01.wikitree.co.kr/webdata/ge/images/20180622/If8lcAf11ICgWfch1RSUYXnqrDcOZaFPyNwU3oCV.jpeg",
+      "thumbnail": "http://cdnweb01.wikitree.co.kr/webdata/ge/images/20180622/If8lcAf11ICgWfch1RSUYXnqrDcOZaFPyNwU3oCV.jpeg",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
+      "location": "Taichung city hall, Taiwan",
+      "love": false
+    }
+  ]
+}

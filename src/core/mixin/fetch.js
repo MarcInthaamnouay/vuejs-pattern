@@ -1,3 +1,5 @@
+import kpopbeauty from '../../assets/img.json'
+
 /**
  * Fetch Mixins mixin
  */
@@ -10,9 +12,11 @@ export const fetchMixin = {
      * @return {Promise}
      */
     get() {
-      return fetch('https://jsonplaceholder.typicode.com/todos')
-        .then(res => res.json())
-        .catch(err => Promise.reject(err));  
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          return resolve(kpopbeauty)
+        }, 2000);
+      })
     }
   }
 }
