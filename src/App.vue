@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Demo layout component"/>
+    <HelloWorld msg="Demo base component"/>
     <form-layout>
       <div class="flex">
-        <p>A simple content over here. This can be a list of text or the rest of the form...</p>
+        <p>Base component used outside of layout component</p>
+        <base-submit-button
+          text="base component button"
+        ></base-submit-button>
       </div>
     </form-layout>
   </div>
@@ -24,16 +27,6 @@ export default {
   data() {
     return {
       searchValue: 'hello'
-    }
-  },
-  methods: {
-    updateValue(str) {
-      this.searchValue = str
-
-      const id = parseInt(this.searchValue)
-      if (!isNaN(id)) {
-        this.$store.dispatch('user/setUser', id)
-      }
     }
   },
   components: {

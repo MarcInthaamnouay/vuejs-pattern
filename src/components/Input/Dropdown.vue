@@ -34,9 +34,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.select-input {
-
-}
-</style>

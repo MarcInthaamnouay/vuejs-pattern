@@ -1,7 +1,6 @@
 <template>
   <div class="form-layout">
-    <h2>Layout component example</h2>
-    <p>It has 2 button and 1 input and the content render through the "slot"</p>
+    <h2>Base component example in layout component</h2>
     <dropdown
       :name="dropdown.name"
       :option="dropdown.opt"
@@ -9,19 +8,17 @@
       @input="updateSelectedValue"
     ></dropdown>
     <slot />
-    <submit-button :text="submit"></submit-button>
-    <submit-button :text="del"></submit-button>
+    <base-submit-button :text="submit"></base-submit-button>
+    <base-submit-button :text="del"></base-submit-button>
   </div>
 </template>
 
 <script>
-import SubmitButton from '../../Button/SubmitButton.vue'
 import Dropdown from '../../Input/Dropdown.vue'
 
 export default {
   name: 'TheFormLayout',
   components: {
-    SubmitButton,
     Dropdown
   },
   data() {
