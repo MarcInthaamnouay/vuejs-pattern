@@ -7,6 +7,20 @@
       "thumbnail": "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2018/08/31/gmredvelvet0831_2x.jpg?itok=e_GNNBBc&timestamp=1535712319",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
       "location": "Seoul, Korea",
+      "members": [
+        {
+          "name":  "Irene / 아이린",
+          "img": "https://kprofiles.com/wp-content/uploads/2017/05/Irene.jpg"
+        },
+        {
+          "name": "Seul Gi / 강슬기",
+          "img": "https://www.nautiljon.com/images/more/01/98/88389.jpg"
+        },
+        {
+          "name": "Wendy / 웬디",
+          "img": "http://image.jjang0u.service.concdn.com/data3/chalkadak/306/201602/28/145658726772693.jpg"
+        }
+      ],
       "love": false
     },
     {
@@ -17,24 +31,66 @@
       "thumbnail": "https://0.soompi.io/wp-content/uploads/2018/01/24052131/oh-my-girl-show-champion.jpg?s=900x600&e=t",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
       "location": "Busan haeundae, Korea",
+      "members": [
+        {
+          "name":  "Yooa / 유아",
+          "img": "https://t1.daumcdn.net/cfile/tistory/998B7D3359AFC49D34"
+        },
+        {
+          "name": "Seung Hee / 승희",
+          "img": "https://pds.joins.com/news/component/ilgan_isplus/201704/12/2017041218570707100.jpeg"
+        },
+        {
+          "name": "A Rin / 아린",
+          "img": "https://pbs.twimg.com/media/DTWNK_-U0AA-54-.jpg"
+        }
+      ],
       "love": false
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Gugudan",
       "img": "https://0.soompi.io/wp-content/uploads/2017/10/08190936/gugudan.jpg?s=900x600&e=t",
       "thumbnail": "https://www.nautiljon.com/images/more/01/39/123993.jpg",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
       "location": "Seoul, Guro-digital-complex, Korea",
+      "members": [
+        {
+          "name":  "Hana / 하나",
+          "img": "http://tenasia.hankyung.com/webwp_kr/wp-content/uploads/2017/09/2017092018423945186-540x810.jpg"
+        },
+        {
+          "name": "Mimi / 미미",
+          "img": "https://i.pinimg.com/originals/e0/a7/51/e0a75174c4d5afe7a8efc039bd14dcee.jpg"
+        },
+        {
+          "name": "Se Jeong / 세정",
+          "img": "https://i.pinimg.com/originals/0a/67/13/0a671322cbe568f4507984f3d5a2a17d.jpg"
+        }
+      ],
       "love": false
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Twice",
       "img": "http://cdnweb01.wikitree.co.kr/webdata/ge/images/20180622/If8lcAf11ICgWfch1RSUYXnqrDcOZaFPyNwU3oCV.jpeg",
       "thumbnail": "http://cdnweb01.wikitree.co.kr/webdata/ge/images/20180622/If8lcAf11ICgWfch1RSUYXnqrDcOZaFPyNwU3oCV.jpeg",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper elit diam, nec porttitor nisl semper nec. Nulla tellus purus, mattis nec consectetur eget, cursus sit amet diam.",
       "location": "Taichung city hall, Taiwan",
+      "members": [
+        {
+          "name":  "Na Yeon / 하나",
+          "img": "https://i.pinimg.com/originals/a2/43/97/a243978476ff5259de75d53b9402a64c.jpg"
+        },
+        {
+          "name": "Jung Yeon / 정연",
+          "img": "http://www.topstarnews.net/news/photo/201807/445413_96401_3747_org.jpg"
+        },
+        {
+          "name": "Tzuyu / 周子瑜",
+          "img": "https://lh3.googleusercontent.com/g6Uxr6PrSbhNbozu4547pwlwOoAW9GglhKWMWtK2ImD2eBSBS9LOQX9nbK6MxWgTSs4rlrSkfhOalXKYjhSjjfxc4hW48EzZ=w1600-rj"
+        }
+      ],
       "love": false
     }
   ]

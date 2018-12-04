@@ -1,6 +1,7 @@
 <template>
   <div>
     <component :is="someComponent" />
+    <component :is="loveDetailComponent" />
   </div>
 </template>
 
@@ -16,7 +17,8 @@ export default {
   mixins: [fetchMixin],
   computed: {
     ...mapGetters({
-      photos: 'photos/getPhotos'
+      photos: 'photos/getPhotos',
+      love: 'photos/getGroupByLove'
     }),
     someComponent() {
       if (this.photos.length === 0) {
@@ -24,6 +26,13 @@ export default {
       }
 
       return () => import('../../container/List/List.vue')
+    },
+    loveDetailComponent() {
+      if (this.love.length === 0) {
+        return;
+      }
+
+      return () => import('../../container/Detail/DetailContainer.vue')
     }
   },
   components: {

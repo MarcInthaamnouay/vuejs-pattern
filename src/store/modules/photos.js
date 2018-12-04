@@ -15,6 +15,15 @@ const getters = {
    */
   getPhotos: (state) => {
     return state.photos
+  },
+  /**
+   * Get Group By Love
+   * 
+   * @param {Object} state
+   * @return {Array} loved group
+   */
+  getGroupByLove: (state) => {
+    return state.photos.filter(p => p.love)  
   }
 }
 
@@ -74,6 +83,8 @@ const mutations = {
     for (let idx = 0; idx < photos.length; idx++) {
       if (photos[idx].id === id) {
         photos[idx].love = true;
+      } else {
+        photos[idx].love = false;
       }
     }
 

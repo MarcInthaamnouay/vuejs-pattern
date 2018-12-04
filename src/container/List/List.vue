@@ -2,7 +2,7 @@
   <div>
     <div
       v-for="photo in photos"
-      :key="photo.id"
+      v-bind:key="photo.id"
     >
       <main-card :data="photo" />    
     </div>

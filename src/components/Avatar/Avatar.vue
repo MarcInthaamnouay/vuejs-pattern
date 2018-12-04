@@ -5,7 +5,7 @@
     </div>
     <div>
       <p><b>{{title}}</b></p>
-      <p><b>{{location}}</b></p>
+      <p v-if="location"><b>{{location}}</b></p>
     </div>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
     border-radius: 100%;
 
     img {
-      width: 200px;
+      width: 100%;
     }
   }
 
