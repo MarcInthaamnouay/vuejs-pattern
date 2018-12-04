@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Demo render props"/>
-    <Searchbar 
-      v-bind:value="searchValue"
-      v-on:input="updateValue"
-    />
-    <div class="flex">
-      <ListContainer :input="searchValue"/>
-    </div>
+    <HelloWorld msg="Demo layout component"/>
+    <form-layout>
+      <div class="flex">
+        <p>A simple content over here. This can be a list of text or the rest of the form...</p>
+      </div>
+    </form-layout>
   </div>
 </template>
 
@@ -19,8 +17,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Searchbar from './components/Searchbar/Searchbar.vue'
-import ListContainer from './container/ListContainer.vue'
+import FormLayout from './components/Layout/Form/TheFormLayout.vue'
 
 export default {
   name: 'app',
@@ -41,8 +38,7 @@ export default {
   },
   components: {
     HelloWorld,
-    Searchbar,
-    ListContainer,
+    FormLayout
   }
 }
 </script>
@@ -55,5 +51,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.flex {
+  background-color: #94C0FF;
 }
 </style>
