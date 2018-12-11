@@ -1,12 +1,8 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Demo render props"/>
-    <Searchbar 
-      v-bind:value="searchValue"
-      v-on:input="updateValue"
-    />
+    <HelloWorld msg="Demo component resolving using async vue component"/>
     <div class="flex">
-      <ListContainer :input="searchValue"/>
+      <manga-list-page></manga-list-page>
     </div>
   </div>
 </template>
@@ -19,30 +15,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Searchbar from './components/Searchbar/Searchbar.vue'
-import ListContainer from './container/ListContainer.vue'
+import MangaListPage from './pages/MangaListPage.vue'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      searchValue: 'hello'
-    }
-  },
-  methods: {
-    updateValue(str) {
-      this.searchValue = str
-
-      const id = parseInt(this.searchValue)
-      if (!isNaN(id)) {
-        this.$store.dispatch('user/setUser', id)
-      }
-    }
-  },
   components: {
     HelloWorld,
-    Searchbar,
-    ListContainer,
+    MangaListPage
   }
 }
 </script>

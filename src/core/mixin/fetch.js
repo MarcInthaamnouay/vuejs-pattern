@@ -10,8 +10,9 @@ export const fetchMixin = {
      * @return {Promise}
      */
     get() {
-      return fetch('https://jsonplaceholder.typicode.com/todos')
+      return fetch('https://www.mangaeden.com/api/list/0/?p=10')
         .then(res => res.json())
+        .then(res => res.manga)
         .catch(err => Promise.reject(err));  
     }
   }
