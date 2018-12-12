@@ -1,7 +1,8 @@
 <script>
 import { mapState, mapGetters } from 'vuex' 
-import Card from '../../components/card/card.vue'
 import { fetchMixin } from '../../core/mixin/fetch'
+import Card from '../../components/card/card.vue'
+import MangaPlaceholder from '../../components/placeholder/MangaPlaceholder.vue'
 
 import './scss/container.scss'
 
@@ -14,7 +15,8 @@ export default {
     })
   },
   components: {
-     Card
+     Card,
+     MangaPlaceholder
   },
   /**
    * Created
@@ -31,6 +33,12 @@ export default {
    */
   render(h) {
     const mangas = this.mangas
+    if (mangas.length === 0) {
+      return (
+        <MangaPlaceholder />
+      )
+    }
+
     return (
       <div class="mangas">
         {mangas.map(m => {
