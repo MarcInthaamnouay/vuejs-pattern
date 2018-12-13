@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <HelloWorld msg="Demo layout component"/>
+    <button @click="loadAsync">Click to load async component</button>
     <form-layout>
-      <div class="flex">
-        <p>A simple content over here. This can be a list of text or the rest of the form...</p>
-      </div>
+      <add-form-component v-if="show"/>
     </form-layout>
   </div>
 </template>
@@ -18,12 +17,16 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import FormLayout from './components/Layout/Form/TheFormLayout.vue'
+import MultiplePlaceholder from './components/placeholder/MultiplePlaceholder.vue'
+import ErrorComponent from './components/error/ErrorComponent.vue'
+
 
 export default {
   name: 'app',
   data() {
     return {
-      searchValue: 'hello'
+      searchValue: 'hello',
+      show: false
     }
   },
   methods: {
@@ -34,11 +37,21 @@ export default {
       if (!isNaN(id)) {
         this.$store.dispatch('user/setUser', id)
       }
+    },
+    loadAsync() {
+      this.show = !this.show
     }
   },
   components: {
     HelloWorld,
-    FormLayout
+    FormLayout,
+    AddFormComponent: () => ({
+      component: import('./components/form/AddForm.vue'),
+      loading: MultiplePlaceholder,
+      error: ErrorComponent,
+      delay: 100,
+      timeout: 3000
+    })
   }
 }
 </script>
